@@ -1,15 +1,19 @@
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
+		<meta name="description" content="Prestadores de servicios es una empresa que presta servicios de plomeria, piscinas, parque, electricidad en girardot y sus alrededores, ibague, " />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="img/favicon.png" />
 
 		<title>Prestadores de Servicios</title>
 
+		<!--favicon-->
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 
 		<!--estilos principales de las paginas-->
 		<link rel="stylesheet" href="css/styles.css" />
+
+		<link rel="stylesheet" href="css/animate.css" />
 
 		<!--libreria para hover-->
 		<link rel="stylesheet" href="css/hover-min.css" />
@@ -24,12 +28,22 @@
 
 	    <!--para clientes-->
 	    <script src="js/jquery.bxslider.min.js"></script>
-	    
+
+		<!--estilos del menu y el js del mismo-->
+ 		<script src="js/menu.js"></script>
+
+
+ <script src="js/bjqs.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/estilos.css" />
+
+
+
+
 	</head>
 	
 	<body>
 
-		<!--conexion con servilaboral-->
 		<div class="otra-empresa">
 			<div class="content-width relative">
 				<p><a href="template/servilaboral.html">Servilaboral</a></p>
@@ -37,15 +51,11 @@
 			</div>
 		</div>
 
-		<!--cabezera-->
 		<section class="content-width">
-						
-				
-			<!--cabezera-->
 			<div class="cabezera">
-			   <div>
+			    <div>
 			        <figure class="logo">
-			            <img src="img\prestadoresdeservicios.png" alt="" width="300" height="auto">
+			            <img src="img/prestadoresdeservicios.png" alt="" width="300" height="auto">
 			        </figure>
 			    </div>
 
@@ -54,58 +64,77 @@
 			    	<h4>LLamanos</h4>
 					<div class="left">
 						<p class="left icon-phone icono-contacto"></p>
-						<p class="left">833 31 57<br>835 32 98 </p>
+						<p class="left celtel">833 31 57<br>835 32 98 </p>
 					</div>
 					<div class="left  telefono">
 					    <p class="left icon-phone2 icono-contacto"></p>
-					    <p class="left">316 741 0906<br>320 346 6553</p>
+					    <p class="left celtel">316 741 0906<br>320 346 6553</p>
 					</div>
 			    </div> 
+			</div>
 
-			    <!--botones para version mobile-->
-			    <div onclick="mostrarMenu()" class="icon-menu" id="btn-menu-mostrar"></div>
-				<div onclick="esconderMenu()" class="icon-menu" id="btn-menu-esconder"></div>
-				<!--menu para tablet y desktop-->
-				<nav class="menu" id="menu">
-					<ul>
-						<li ><a class="hvr-rectangle-out" href="index.html">Inicio</a></li>
-						<li ><a class="hvr-rectangle-out" href="template/servicios.html">Servicios</a></li>
-						<li ><a class="hvr-rectangle-out" href="template/quienes-somos.html">Quienes Somos</a></li>
-						<li ><a class="hvr-rectangle-out" href="template/proyectos/proyecto1.html">Proyectos</a></li>
-						<li ><a class="hvr-rectangle-out" href="template/servilaboral.html">Servilaboral</a></li>
-					</ul>
-				</nav>
+			<div id='cssmenu'>
+				<ul>
+					<li><a href='#'><span>Inicio</span></a></li>
+					<li class='active has-sub'><a href='template/servicios.html'><span>Servicios</span></a>
+						<ul>
+							<li><a href='template/proyectos/proyecto1.html'><span>Mampostería</span></a></li>
+							<li><a href='template/proyectos/proyecto2.html'><span>Enchapes</span></a> </li>
+							<li><a href='template/proyectos/proyecto3.html'><span>Machimbres</span></a></li>
+							<li><a href='template/proyectos/proyecto4.html'><span>DryWall</span></a> </li>
+							<li><a href='template/proyectos/proyecto5.html'><span>Mantenimiento de piscinas</span></a></li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Servicio de piscinero</span></a> </li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Electricidad</span></a> </li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Fibra de vidrio</span></a> </li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Parques biosaludables</span></a> </li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Cerrajería</span></a> </li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Ornamentación</span></a> </li>
+						</ul>					
+
+					</li>
+					<li class='active has-sub'><a href='#'><span>proyectos</span></a>
+						<ul>
+							<li><a href='template/proyectos/proyecto1.html'><span>Parque Infantil</span></a></li>
+							<li><a href='template/proyectos/proyecto2.html'><span>Cabaña Piscilago</span></a> </li>
+							<li><a href='template/proyectos/proyecto3.html'><span>Parque de  Andalucia   </span></a></li>
+							<li><a href='template/proyectos/proyecto4.html'><span>Villa Magdalena Flandes</span></a> </li>
+							<li><a href='template/proyectos/proyecto5.html'><span>Puerto Peñaliza</span></a></li>
+							<li><a href='template/proyectos/proyecto6.html'><span>Piscilago Archivo</span></a> </li>
+						</ul>
+					</li>
+					<li class='active has-sub'><a href='#'><span>Quienes Somos</span></a>
+						<ul>
+							<li><a href='template/nosotros/nosotros.html'><span>Quienes Somos</span></a>
+							</li>
+							<li><a href='template/nosotros/mision y vision.html'><span>Mision y Vision</span></a>
+							</li>
+							<li><a href='template/nosotros/objetivos.html'><span>Objetivos</span></a>
+							</li>
+						</ul>
+					</li>
+					<li><a href='template/videos.html'><span>Videos</span></a></li>
+					<li class='last'><a href='template/servilaboral.html'><span>Servilavoral</span></a></li>
+					<li class='last'><a href='template/contactenos.html'><span>Contactenos</span></a></li>
+				</ul>
 			</div>
 		</section>
 
 		<!--banner y formulario de contacto-->
 		<section class="content-width overflow">
 			<!--banner-->
-			<div class="contenedor-banner left">
-				<ul class="bxslider relative">
-				  <li><img src="img/banner/banner1.jpg" /><p>Construcción y mantenimientos de vias en asfalto y adoquinadas</p></li>
-				  <li><img src="img/banner/banner2.jpg" /><p>Construcción y modificaciones de viviendas con los mas altos estándares de calidad</p></li>
-				  <li><img src="img/banner/banner3.jpg" /><p>Diseño y construcción de parques infantiles acuáticos adaptados a las necesidades de cada entorno</p></li>
-				</ul>
-
-			</div>
-
-			<!--formulario de contacto-->
-			<div class="formulario-contacto left relative">
-				
-					<div id="form">
-						<form action="envio_e-mail.php" method="post">
-							<input type="text" required name="nombre" placeholder="Nombre...">
-							<input type="email" required name="correo" placeholder="E-mail...">
-							<input type="tel" name="telefono" placeholder="Tel...">
-							<textarea name="mensaje" placeholder="Mensaje...*"></textarea>
-							<input class="hvr-bounce-to-top" id="submit" type="submit" value="Enviar">
-						</form>
-					</div>
-					<div class="img-contacto relative">
-					<figure><img src="img/msm.png" alt=""></figure>
-				</div>
-			</div>	  
+			<div id="slider">
+        <ul class="bjqs">
+            <li>
+                <img src="img/banner/banner1.jpg" alt="" title="Construcción y mantenimientos de vias en asfalto y adoquinadas" />
+            </li>
+            <li>
+                <img src="img/banner/banner2.jpg" alt="" title="Construcción y modificaciones de viviendas con los mas altos estándares de calidad" />
+            </li>
+            <li>
+                <img src="img/banner/banner3.jpg" alt="" title="Diseño y construcción de parques infantiles acuáticos adaptados a las necesidades de cada entorno" />
+            </li>
+        </ul>
+    </div>  
 		</section>
 		
 		<!--contenedor de servicios, diferencias, proyectos y clientes-->
@@ -187,7 +216,7 @@
 							<figure><img src="img/proyectos/proyecto2.jpg" alt=""></figure>
 								<div class="ch-info">
 									<h3>Parque Infantil</h3>
-									<p>Instalacion del parque infantil acuático en el Centro Vacacional la primavera mesitas del Colegio.</p>
+									<p>Parque infantil acuático en el Centro Vacacional la primavera .</p>
 									<a href="template/proyectos/proyecto2.html"><button id="btn-ver-mas" type="button" name="enviar">Ver mas</button></a>
 								</div>
 							</div>
@@ -290,12 +319,12 @@
 					<div class="div-footer">
 						<h4>Acerca de Nosotros</h4>
 						<ol>
-							<li>> Prestadores de servicios</li>
-							<li>> prestadoresdservicios@hotmail.com</li>
-							<li>> Tels: 833 31 57</li>
-							<li>> Cel: 3167410906 3203466553</li>
-							<li>> Cra. 8A No. 20A-25 Girardot-Cund</li>
-							<li><a href="https://www.facebook.com/pages/Prestadores-de-Servicios-SAS/538450189624473" target="blank">> Facebook</a></li>
+							<li><span>Prestadores de servicios</span></li>
+							<li><span>prestadoresdservicios@hotmail.com</span></li>
+							<li><span>Tels: 833 31 57</span></li>
+							<li><span>Cel: 3167410906 3203466553</span></li>
+							<li><span>Cra. 8A No. 20A-25 Girardot-Cund</span></li>
+							<li><a href="https://www.facebook.com/pages/Prestadores-de-Servicios-SAS/538450189624473" target="blank">Facebook</a></li>
 						</ol>
 					</div>
 
@@ -303,14 +332,14 @@
 					<div class="div-footer ">
 						<h4>Servicios</h4>
 						<ol>
-							<li>> Mampostería</li>
-							<li>> Acabados</li>
-							<li>> Enchapes</li>
-							<li>> Machimbres</li>
-							<li>> DryWall</li>
-							<li>> Mantenimiento de jardines</li>
-							<li>> Mantenimiento de piscinas </li>
-							<li>> Servicio de piscinero</li>
+							<li><span>Mampostería</span></li>
+							<li><span>Acabados</span></li>
+							<li><span>Enchapes</span></li>
+							<li><span>Machimbres</span></li>
+							<li><span>DryWall</span></li>
+							<li><span>Mantenimiento de jardines</span></li>
+							<li><span>Mantenimiento de piscinas </span></li>
+							<li><span>Servicio de piscinero</span></li>
 							<a href="template/servicios.html"><li class="servicios-mas"> Ver Mas</li></a>
 						</ol>
 					</div>
@@ -327,16 +356,30 @@
 		<!--info acerca de los diseñadores-->
 		<section class="fondo-cte-footer">
 			<div class="content-width">
+			<center>	
+				<a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+					<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=189612">
+				</a>
+				<div style="display:none">
+					
+				<br>
+				<a href='http://www.websmultimedia.com/contador-de-visitas-gratis'>Contador de visitas</a>
+				<br>
+				<a href='http://www.websmultimedia.com'>diseño web económico</a>
+				</div>
+			</center>
 				<div class="contenedor-info-diseñador relative">
 					<h3 id="stzEF">Diseñado por <font color="#3e9344"><a href="http://sistematizar.co/" target="blank">SistematizarEF</a></font></h3>
 					
 				</div>
 					
 			</div>
+			<!-- Contador de visitas -->
+<!-- Fin Contador de visitas -->
+
 		</section>
 		
-		<!--este script es para que el boton en versionmobile sirva-->
-		<script src="js/interacion.js"></script>
+		
 
 
 	    <script>
@@ -362,6 +405,13 @@
 			autoControls: true
 			});
 	    </script>
-	   
+	    <!--<script>
+			$( "h2" ).hover(
+			  function() {
+			    $( this ).addClass( "animated infinite bounce" );
+			  },
+			)
+			</script>
+	  -->
 	</body>
 </html>

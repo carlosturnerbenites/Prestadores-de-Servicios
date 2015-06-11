@@ -3,9 +3,9 @@
 $headers = 'From: prestadoresdservicios@gmail.com' . "\r\n" .
     'Reply-To: prestadoresdservicios@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-$subject = 'sistematizaref.programador5@gmail.com';
+$subject = 'prestadoresdservicios@hotmail.com';
 $title = 'Contacto desde Prestadores de servicios';
-$mensaje = "ha recibido un mensaje   De {$_POST['nombre']}  Correo : {$_POST['correo']}  Mensaje : {$_POST['mensaje']} " ;
+$mensaje = "ha recibido un mensaje de {$_POST['nombre']}. Correo : {$_POST['correo']}. Mensaje : {$_POST['mensaje']} " ;
 
 if(strtolower($_SERVER['REQUEST_METHOD']) == 'post') {
 

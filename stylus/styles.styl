@@ -1,4 +1,5 @@
 @import "normalize.styl"
+
 @import "fonts.styl"
 //estilos banner
 @import "jquery.bxslider.styl"
@@ -6,6 +7,33 @@
 @import "estile-proyectos.styl"
 //estilos tabss
 @import "estilo-tab.styl"
+
+@import "estilosmenu.styl"
+
+@import "estilosnosotros.styl"
+@import "estilosservicios.styl"
+
+.icon-menu
+	font-size 30px
+
+.myphoto
+	img
+		width 80%
+		margin 0 10%
+
+.celtel
+	color: #00AFF0
+	font-weight: bold;
+	font-size: 21px;
+.bx-viewport
+	max-height 430px !important
+	
+//color de telefonos
+.contacto-tel
+  color rgb(30, 71, 234)
+
+.contenedor-tel-y-logo
+	  height 164px
 .servicios-mas
 	padding 5px
 	background #535993
@@ -56,16 +84,9 @@ ol
 	list-style none
 	margin 0
 	padding-left 16px
-body
-	font-size 18px
-	font-family "nunito"
+
 figure 
 	margin 1em
-
-h2 	
-	color gris
-	margin-top 0
-	font-size 2em
 form
 	height 410px
 //clases utilitarias
@@ -91,10 +112,9 @@ form
 	font-size 2em
 	right 0
 .content-width
-	max-width 1000px
-	margin 0 auto
-	background white
-	padding-bottom 1em
+	max-width 1000px !important
+	margin 0 auto !important
+	padding-bottom 1em !important
 	&:last-child
 		padding 0
 .otra-empresa
@@ -117,11 +137,14 @@ form
 	margin-right 6px
 	font-size 3em
 .contacto
-	right 3em
-	top 0
 	margin-top 2em
+	margin-right 1em
+	top 0
+	position absolute
+	right 0
 	h4
 		margin 0
+
 .menu  
 	height 3em
 	margin-top 1em
@@ -142,15 +165,15 @@ form
 		padding 0
 nav
 	border-bottom solid 1px #f2f1f1
+	padding-bottom 2em !important
 .servicios-centrar
-	
 	display block
 	width 16.6666%
 	float left
 	margin-bottom 1em
 	.servicios
-		color #e7a950
-		border solid 3px #E7A950
+		color #1A2586
+		border solid 3px #1A2586
 		width 90%
 		margin 0 auto
 		border-radius 5px
@@ -187,7 +210,7 @@ nav
 		text-align center
 		color black
 		margin 0
-		color #e7a950
+		color #1A2586
 		font-size 22px
 		line-height 20px
 .contenedor-diferencias
@@ -197,9 +220,9 @@ nav
 		
 	article
 		width 50%
-		height 185px
 		float left
 		color gray
+		min-height 160px
 		p
 			text-align justify	
 			width 90%
@@ -258,42 +281,42 @@ nav
 			width 100%
 .fondo-cte-footer
 	width 100%
-	background-color #444444
+	background-color rgba(70, 70, 70, 0.5)
 	.content-width
 	footer
 	.contenedor-info-diseñador
-		background-color #444444
 		h3 
 			color white
 			font-size 10px
 			margin 0
 footer
-	background-color gray
 	.div-footer
 		margin-top 1em
 		width 33%
 		float left
 		a
-			color gray
+			color #3b5998
+			font-size 20px
+			font-weight bold
 		iframe
 			width 100%
 			height 260px
+		.servicios-mas
+			width: 30%;
+			margin: 0px 35%;
 	li,
 	h4
 		color white
-	.icon-map
-		margin-left 0 .5em
+		text-align center
 		
 
 .contenedor-info-diseñador
+	border-top 1px solid gray
 	height 1em
-	background-color gray
-
 
 .formulario-contacto
-	height 378px
-	width 29%
-	margin-left 1%
+	height 460px
+	width 30%
 	input 
 		height 2em
 		margin-bottom 1em
@@ -311,29 +334,42 @@ footer
 		height 3em
 	.img-contacto
 		left -7px
-		width 100%
+		width 108%
 		height 3.3em
 		figure
 			margin 0
 			width 100%
 			img
 				width 100%
+	
 #form
-	width 73%
+	width 81%
 	margin 0 7%
 	padding 5px 13px 0px 13px
 	background #f0541c
 	position absolute
 	top 0
 	padding-top 3em
+	
+.imgcontactanos
+	width 40%
+	figure	
+		width 77%
+		margin 0 auto
+		img
+			width 100%
+.info-detallada-contacto
+	width 30%
+	float left
+	text-align center
 		
 .contenedor-banner
-	width 70%
+	width 100%
 	p
 		position absolute
 		background rgba(37, 52, 47, 0.5)
 		color white
-		bottom 18pxpx
+		top 365px
 		height 3em
 		width 100%
 		padding-left .5em
@@ -381,15 +417,7 @@ footer
 	width 19%
 	overflow hidden
 	display inline-block	
-///////////////////////////tabs
-.accordion 
-	.accordion-navigation
-		.hvr-bounce-to-bottom
-			background #00796B
 
-			border-bottom 4px solid
-			&:before
-				background #009688 !important
 .imagen-proyecto
 	width 90%
 	margin 0 auto
@@ -401,9 +429,7 @@ footer
 	width 66%
 	min-height 100px
 	padding 0 2% 
-	p
-		text-align justify
-		color gray		
+		
 		
 		
 .otra-info
@@ -421,8 +447,7 @@ footer
 			margin 1em 4em
 			a
 				color black
-				margin-bottom 15%
-				
+				margin-bottom 15%				
 .quienessomos
 	display inline-block
 	width 100%
@@ -454,43 +479,13 @@ footer
 	h1
 		color #FF9C7A			
 
-		
-		
-			
-			
-
-
-	
-
-
-
 @media screen and (max-width 1000px)
 	.content-width	
 		max-width 800px
 	.contenedor-diferencias
-		article
-			width 50%
-			height 160px
 	.servicios-centrar 
 		p
 			font-size 18px
-	#form 
-		width 70%
-	form 
-		height 320px
-	.formulario-contacto
-		height 378px
-		width 29%
-		margin-left 1%
-		input 
-			height 1em
-			&:first-child
-				margin-top 0em
-		textarea
-			height 7em
-			
-		#submit
-			height 2em
 	
 @media screen and (max-width 900px)
 	.contenedor-servilaboral 
@@ -514,9 +509,6 @@ footer
 			margin 0 auto
 			img
 				width 100%
-	
-	.formulario-contacto 
-		display none
 	.contenedor-banner
 		width 100%
 	.contenedor-diferencias
@@ -546,7 +538,12 @@ footer
 	.info-detallada-servicio
 		width 90%
 		margin 0 5%
-		
+	
+	footer
+		.div-footer
+			width 50%
+		.sale
+			display none
 		
 @media screen and (max-width 700px)
 	.content-width	
@@ -579,14 +576,7 @@ footer
 	.contenedor-banner
 		width 100%
 		
-	.formulario
-		background white
-		width 100%
-		margin 0 auto
-		float none
-		form
-			width 60%
-			margin 0 auto	
+		
 			
 	.info-detallada-proyect
 		width 100%
@@ -604,15 +594,15 @@ footer
 				margin 0 auto
 				display table
 				margin-bottom 20px
-		
-		
-
-
-
-
-	
+			
 @media screen and (max-width 600px)
-	
+	footer
+		.div-footer
+			padding-left 1em
+		.div-footer
+			width 90%
+		.sale
+			display block
 	.content-width	
 		max-width 500px
 	.contenedor-diferencias
@@ -624,11 +614,7 @@ footer
 			h4 
 				margin-bottom .4em
 				
-	footer
-		.div-footer
-			width 45%
-		.sale
-			display none
+	
 	
 	
 	.contenedor-servicios
@@ -639,16 +625,9 @@ footer
 		text-align center
 		figure
 			margin 0 auto
-	
 			
 @media screen and (max-width 450px)
-	footer
-		.div-footer
-			padding-left 1em
-		.div-footer
-			width 90%
-		.sale
-			display block
+	
 	.contenedor-info-diseñador
 		height 1em	
 		h3
@@ -679,6 +658,47 @@ footer
 			margin 0 20%
 			span
 				font-size 20px !important
+
+
+body 
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-image url('../img/trama.jpg')
+	
+li,	
+a,
+p
+	font-size 17px	
+	margin-bottom 10px
+span
+	font-size 16px
+h1
+	font-size 30px
+h2
+	font-size 25px
+	border-bottom 3px solid #f0541c
+	width 50%
+	border-bottom-style: dashed;
+h3
+	font-size 21px
+h4
+	font-size 20px
+h5
+	font-size 19px
+h6
+	font-size 17px
+	
+.texto-decorado
+	padding-bottom 5px
+	border-bottom 2px solid red
+	width 50%
+
+
+
+	
+	
+
+
+
 	
 
 
